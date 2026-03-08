@@ -13,7 +13,7 @@ b = pd.Series([30, 35, 40], index=['2015 Sales', '2016 Sales', '2017 Sales'], na
 # print(b)
 
 im = kn(n_neighbors=3)
-df = pd.read_csv(r"C:\DataAnalyst\PythonBasicToAdvance\new.csv")
+df = pd.read_csv(r"C:\DataAnalyst\PythonBasicToAdvance\smallDataSet.csv")
 # print(df.head())
 
 # print(df["Gender"].isnull().sum())
@@ -52,4 +52,5 @@ print(df.info())
 
 df.to_csv(r"C:\DataAnalyst\PythonBasicToAdvance\new.csv",index=False)
 
-print(df.read_csv(r"C:\DataAnalyst\PythonBasicToAdvance\new.csv"))
+
+print(df.read_csv(r"C:\DataAnalyst\PythonBasicToAdvance\SmallDataSet.csv"))
