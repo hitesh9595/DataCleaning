@@ -1,0 +1,61 @@
+index,Customer_ID,Name,Age,Gender,City,Purchase_Amount,Join_Date,Membership
+0,1001,Rahul,40,Female,Nashik,8675,1/15/2023,Gold
+1,1002,Rahul,35,Female,MUMBAI,2000,2/15/2023,Gold
+2,1003,Vikas,30,Male,MUMBAI,50000,8/14/2021,Silver
+3,1004,Suresh,30,Female, pune ,4000,1/15/2023,Silver
+4,1005,Rina,30,Female,Delhi,3500,6/25/2023,Silver
+5,1006,Rahul,35,Male,Nashik,8675,6/25/2023,Gold
+6,1007,Vikas,28,Female,Mumbai,50000,2/15/2023,Platinum
+7,1008,Kiran,28,Female,Mumbai,1500,8/14/2021,Gold
+8,1009,Pooja,40,Male,MUMBAI,2500,10/10/2022,Gold
+9,1010,Amit,25,Female,Mumbai,3000,8/14/2021,Gold
+10,1011,Rohit,30,Female, pune ,8675,12/10/2022,Gold
+11,1012,Manoj,30,Female,delhi,8675,1/15/2023,Gold
+12,1013,Suresh,31,Female,MUMBAI,8675,8/14/2021,Platinum
+13,1014,Pooja,31,Female,Mumbai,8675,1/15/2023,Silver
+14,1015,Manoj,35,Female,Mumbai,4000,8/14/2021,Platinum
+15,1016,Ankit,25,Female,Nashik,2000,1/15/2023,Gold
+16,1017,Pooja,31,Female,delhi,8675,6/25/2023,Silver
+17,1018,Suresh,31,Female,Nagpur,3500,1/15/2023,Gold
+18,1019,Rina,22,Male,Pune,1500,10/10/2022,Gold
+19,1020,Vikas,25,Female,delhi,4000,1/15/2023,Gold
+20,1021,Rahul,31,Male,Nagpur,2500,2/15/2023,Platinum
+21,1022,Ankit,31,Female,Pune,50000,1/15/2023,Platinum
+22,1023,Rahul,40,Female, pune ,8675,1/15/2023,Platinum
+23,1024,Kunal,25,Female,Pune,1500,1/15/2023,Gold
+24,1025,Meena,31,Male,Nashik,4000,1/15/2023,Gold
+25,1026,Suresh,25,Female, pune ,4000,1/15/2023,Gold
+26,1027,Manoj,31,Male,MUMBAI,1500,10/10/2022,Silver
+27,1028,Suresh,40,Male,MUMBAI,3000,1/15/2023,Gold
+28,1029,Ankit,25,Male,Mumbai,3000,12/10/2022,Silver
+29,1030,Rina,25,Female,Nagpur,3500,10/10/2022,Platinum
+30,1031,Priya,40,Female, pune ,4000,6/25/2023,Platinum
+31,1032,Sneha,25,Female,MUMBAI,3500,8/14/2021,Gold
+32,1033,Amit,31,Female,delhi,4000,2/15/2023,Platinum
+33,1034,Rahul,31,Female,Nashik,1500,8/14/2021,Silver
+34,1035,Amit,31,Male,Mumbai,2500,2/15/2023,Platinum
+35,1036,Rina,40,Female,Mumbai,2000,8/14/2021,Gold
+36,1037,Kunal,30,Male,Nashik,8675,10/10/2022,Silver
+37,1038,Pooja,31,Female,delhi,50000,1/15/2023,Gold
+38,1039,Pooja,40,Female, pune ,3000,1/15/2023,Platinum
+39,1040,Kunal,30,Female,delhi,2500,1/15/2023,Platinum
+40,1041,Meena,31,Male,Delhi,50000,1/15/2023,Silver
+41,1042,Priya,45,Female,Pune,8675,1/15/2023,Platinum
+42,1043,Rahul,22,Male,Nagpur,8675,1/15/2023,Gold
+43,1044,Meena,31,Male,Mumbai,4000,8/14/2021,Silver
+44,1045,Rahul,35,Female,Delhi,8675,1/15/2023,Silver
+45,1046,Vikas,45,Male,Pune,8675,10/10/2022,Gold
+46,1047,Suresh,45,Male,Mumbai,3000,6/25/2023,Platinum
+47,1048,Kiran,28,Female,delhi,8675,1/15/2023,Gold
+48,1049,Rohit,31,Female,Nagpur,8675,1/15/2023,Gold
+49,1050,Amit,31,Male,Pune,2000,1/15/2023,Gold
+50,1051,Priya,45,Male,Mumbai,2500,1/15/2023,Silver
+51,1052,Rahul,31,Female,Nashik,8675,1/15/2023,Gold
+52,1053,Ankit,28,Female,Nashik,2000,12/10/2022,Platinum
+53,1054,Meena,31,Male,Delhi,8675,1/15/2023,Gold
+54,1055,Vikas,28,Female,Delhi,2500,1/15/2023,Gold
+55,1056,Rina,30,Female,Mumbai,8675,6/25/2023,Silver
+56,1057,Kiran,22,Female,Pune,8675,10/10/2022,Gold
+57,1058,Vikas,31,Female,delhi,2000,6/25/2023,Silver
+58,1059,Rina,31,Male,MUMBAI,8675,1/15/2023,Gold
+59,1060,Rohit,28,Male,Mumbai,1500,2/15/2023,Silver
