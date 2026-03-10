@@ -1,6 +1,6 @@
-##Data Cleaning 
+## Data Cleaning 
 
-#Project Overview
+# Project Overview
 A comprehensive data cleaning and preprocessing pipeline built to handle messy, real-world datasets containing customer and employee information. This project demonstrates robust data wrangling techniques to transform inconsistent, missing, and malformed data into clean, analysis-ready formats.
 
 # Key Features
@@ -127,6 +127,6 @@ Add data validation reports
 Create visualization of cleaning impact
 Support for more file formats (JSON, SQL)
 
-#License
+# License
 This project is open source and available under the MIT License.
 
