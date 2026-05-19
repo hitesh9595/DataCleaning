@@ -1,132 +1,209 @@
-# Data Cleaning 
-
-#Project Overview : 
-A comprehensive data cleaning and preprocessing pipeline built to handle messy, real-world datasets containing customer and employee information. This project demonstrates robust data wrangling techniques to transform inconsistent, missing, and malformed data into clean, analysis-ready formats.
-
-# Key Features
-Automated ID Management: Handles duplicate IDs, out-of-range values, and assigns new IDs systematically
-Text-to-Numeric Conversion: Converts word-based numbers (e.g., "twenty three" → 23) to integers
-Intelligent Missing Value Imputation: Uses KNN Imputer for numerical columns and mode imputation for categorical data
-Data Type Standardization: Ensures consistent formats across all columns
-Pattern-Based Email Fixing: Automatically corrects malformed email addresses
-Phone Number Normalization: Standardizes phone numbers to 10-digit format
-
-# Technologies Used
-Python 3.8+
-Pandas - Data manipulation and analysis
-NumPy - Numerical operations
-scikit-learn - KNN Imputer for advanced missing value handling
-Regular Expressions (re) - Pattern matching for email validation
-
-#Datasets Processed
+#Advanced Data Cleaning & Preprocessing Pipeline
+##Project Overview
+A comprehensive collection of real-world data cleaning and preprocessing projects built using Python, Pandas, NumPy, and Machine Learning techniques.
+This repository demonstrates advanced data wrangling, preprocessing, missing value handling, feature engineering, and intelligent data recovery techniques across multiple datasets including employee records, customer transactions, cafe sales data, and movie industry datasets.
+The project focuses on transforming messy, inconsistent, and incomplete datasets into clean, structured, and analysis-ready formats suitable for Machine Learning and Business Intelligence applications.
+________________________________________
+##Technologies Used
+•	Python 3.8+
+•	Pandas
+•	NumPy
+•	scikit-learn
+•	Random Forest Classifier
+•	KNN Imputer
+•	Label Encoding
+•	Regular Expressions (re)
+________________________________________
+##Datasets Processed
+Employee & Customer Datasets
 <a href="https://github.com/hitesh9595/DataCleaning/blob/main/dataCleaning.csv">dataCleaning.csv</a>
 <a href ="https://github.com/hitesh9595/DataCleaning/blob/main/SmallDataSet.csv">SmallDataSet.csv</a>
 <a href ="https://github.com/hitesh9595/DataCleaning/blob/main/MessyDataCleaning10k.xlsx">MessyDataCleaning10k.xlsx</a>
-
-#1.This pipeline handles two main types of datasets:
-
-Employee Records Dataset (CleanedMessyPeople.xlsx)
-Contains employee information with columns:
-id: Employee identifier
-age: Employee age (including word formats)
-gender: Gender information
-email: Email addresses (with various formatting issues)
-phone: Contact numbers
-address: Physical address
-join_date: Employment start date
-salary: Annual compensation
-department: Department name
-rating: Performance rating (1-5)
-comments: Additional notes
-
-#2️.Customer Records Dataset (dataCleaning.csv)
-Contains customer information with columns:
-Age: Customer age
-Gender: Gender information
-City: City of residence
-Purchase_Amount: Transaction value
-Join_Date: Customer since date
-Membership: Membership type
-Email: Contact email
-Phone: Contact number
-Salary: Annual income
-Last_Login: Last activity timestamp
-
-# Data Cleaning Operations
-ID Management
-python
-- Removes duplicate IDs
-- Handles out-of-range values (1-10000)
-- Assigns new IDs to missing entries
-- Maintains ID sequence integrity
-Age Processing
-python
-- Converts word numbers to integers (e.g., "thirty five" → 35)
-- Removes outliers (>100 years)
-- Applies KNN Imputer for missing values
-- Ensures positive integer values
-Gender Standardization
-python
-- Maps 'M'/'F' to 'Male'/'Female'
-- Handles various formats (FEMALE, female, F)
-- Replaces ambiguous entries with mode value
-Email Validation & Fixing
-python
-- Pattern matching for valid email format
-- Auto-adds missing domains
-- Extracts usernames from malformed entries
-- Handles missing emails with placeholders
+Cafe Sales Dataset
+<a href ="https://github.com/hitesh9595/DataCleaning/blob/main/cleaned_cafe_sales.csv">>cleaned_cafe_sales.csv </a>
+Movies Dataset
+<a href ="https://github.com/hitesh9595/DataCleaning/blob/main/movies%20(Autosaved).csv"> movies (Autosaved).csv</a>
+________________________________________
+Project 1 — Employee & Customer Data Cleaning Pipeline
+Overview
+A robust preprocessing system designed to clean employee and customer datasets containing missing values, malformed text, duplicate IDs, inconsistent formats, and invalid entries.
+________________________________________
+##Features
+Automated ID Management
+•	Removes duplicate IDs
+•	Handles invalid ID ranges
+•	Assigns new IDs systematically
+•	Maintains sequence integrity
+Text-to-Numeric Conversion
+Converts word numbers into integers:
+"twenty three" → 23
+"thirty five" → 35
+Intelligent Missing Value Handling
+•	KNN Imputer for numerical columns
+•	Mode imputation for categorical columns
+•	Mean/Median imputation where required
+Email Validation & Repair
+•	Detects malformed emails
+•	Adds missing domains
+•	Repairs invalid formats
+•	Creates placeholders for missing emails
 Phone Number Normalization
-python
-- Removes non-numeric characters
-- Ensures 10-digit format
-- Adds default prefix for missing numbers
-Date Handling
-python
-- Converts to proper datetime format
-- Removes future dates
-- Imputes missing dates with median/mode
-- Standardizes date format
-Salary & Financial Data
-python
-- Converts to numeric format
-- Handles absolute values (removes negatives)
-- Mean imputation for missing values
-- Rounds to integers
-
-# Results & Impact
-After processing through this pipeline:
-
-- 100% of IDs are unique and in correct range
-
-- All ages are standardized to integers (0-100)
-
-- Gender values are consistently formatted
-
-- Email addresses follow proper format
-
-- Phone numbers are 10-digit standardized
-
-- Dates are in proper datetime format
-
-- Missing values intelligently imputed
-
-# Skills Demonstrated
-Data Wrangling: Advanced pandas operations, data transformation
-Problem Solving: Handling edge cases, developing robust cleaning logic
-Machine Learning: KNN Imputer for intelligent missing value prediction
-Regular Expressions: Pattern matching for email validation
-Best Practices: Modular code, comments, error handling
-Domain Knowledge: Understanding of data quality in business contexts
-
-# Future Improvements
-Add unit tests for cleaning functions
-Create configuration file for customizable cleaning rules
-Implement logging for tracking changes
-Add data validation reports
-Create visualization of cleaning impact
-Support for more file formats (JSON, SQL)
-
-# License
+•	Removes symbols and spaces
+•	Converts into standard 10-digit format
+•	Handles missing prefixes
+Date Cleaning
+•	Converts invalid date formats
+•	Removes future dates
+•	Standardizes datetime formats
+Salary & Financial Data Cleaning
+•	Removes negative values
+•	Converts strings to numeric
+•	Handles missing salary entries
+________________________________________
+##Columns Processed
+Employee Dataset
+•	id
+•	age
+•	gender
+•	email
+•	phone
+•	address
+•	join_date
+•	salary
+•	department
+•	rating
+•	comments
+Customer Dataset
+•	Age
+•	Gender
+•	City
+•	Purchase_Amount
+•	Join_Date
+•	Membership
+•	Email
+•	Phone
+•	Salary
+•	Last_Login
+________________________________________
+##Results
+•	100% unique IDs
+•	Standardized age formats
+•	Clean phone numbers
+•	Proper email formatting
+•	Consistent gender categories
+•	Analysis-ready structured data
+________________________________________
+#Project 2 — Cafe Sales Data Cleaning & ML-Based Missing Value Prediction
+##Overview
+A real-world transactional data cleaning project designed to process noisy cafe sales records with missing categorical values, malformed entries, and inconsistent numerical data.
+This project also demonstrates Machine Learning-based missing value prediction using Random Forest Classification.
+________________________________________
+##Features
+Item Cleaning
+•	Removes UNKNOWN and ERROR entries
+•	Encodes categorical items
+•	Applies KNN imputation
+•	Restores original labels
+Numerical Data Cleaning
+•	Quantity cleaning
+•	Price standardization
+•	Total spent correction
+•	Numeric conversion handling
+Payment Method Cleaning
+•	Removes invalid entries
+•	Applies mode imputation
+Machine Learning Location Prediction
+Uses:
+•	RandomForestClassifier
+•	Label Encoding
+•	Feature Engineering
+to predict missing Location values.
+________________________________________
+##ML Workflow
+1. Encode categorical features
+2. Split known & unknown locations
+3. Train Random Forest model
+4. Predict missing locations
+5. Decode predicted labels
+________________________________________
+##Columns Processed
+•	Item
+•	Quantity
+•	Price Per Unit
+•	Total Spent
+•	Payment Method
+•	Location
+•	Transaction Date
+________________________________________
+##Results
+•	Recovered missing locations using ML
+•	Cleaned corrupted entries
+•	Standardized numerical columns
+•	Created structured sales dataset
+________________________________________
+#Project 3 — Movies Dataset Cleaning & Feature Engineering
+##Overview
+A preprocessing and feature engineering project focused on cleaning messy movie industry datasets containing malformed years, noisy genres, missing ratings, and inconsistent vote formats.
+________________________________________
+##Features
+Year Extraction & Cleaning
+•	Removes Roman numerals
+•	Extracts valid years
+•	Handles malformed strings
+Content Type Classification
+Automatically classifies content into:
+•	Movie
+•	Series
+•	TV Movie
+•	Video
+•	TV Special
+•	Video Game
+Genre Standardization
+•	Removes line breaks
+•	Removes extra spaces
+•	Maps genres into standardized formats
+Ratings & Votes Cleaning
+•	Converts votes into numeric values
+•	Removes commas
+•	Fills missing ratings
+Runtime Processing
+•	Handles missing runtime values
+•	Uses mean imputation
+________________________________________
+##Columns Processed
+•	YEAR
+•	GENRE
+•	RATING
+•	VOTES
+•	RunTime
+•	Gross
+________________________________________
+##Results
+•	Standardized movie metadata
+•	Improved dataset consistency
+•	Cleaned vote counts
+•	Created structured content categories
+________________________________________
+##Skills Demonstrated
+•	Data Cleaning
+•	Data Wrangling
+•	Feature Engineering
+•	Missing Value Imputation
+•	Machine Learning
+•	Random Forest Classification
+•	KNN Imputation
+•	Label Encoding
+•	Regular Expressions
+•	Data Transformation
+•	Exploratory Data Preparation
+________________________________________
+##Future Improvements
+•	Add unit testing
+•	Create configurable cleaning rules
+•	Generate automated data quality reports
+•	Add logging system
+•	Support SQL & JSON datasets
+•	Build interactive dashboards
+________________________________________
+##License
 This project is open source and available under the MIT License.
-
