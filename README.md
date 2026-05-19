@@ -1,10 +1,10 @@
 # Advanced Data Cleaning & Preprocessing Pipeline
-##Project Overview
+## Project Overview
 A comprehensive collection of real-world data cleaning and preprocessing projects built using Python, Pandas, NumPy, and Machine Learning techniques.
 This repository demonstrates advanced data wrangling, preprocessing, missing value handling, feature engineering, and intelligent data recovery techniques across multiple datasets including employee records, customer transactions, cafe sales data, and movie industry datasets.
 The project focuses on transforming messy, inconsistent, and incomplete datasets into clean, structured, and analysis-ready formats suitable for Machine Learning and Business Intelligence applications.
 ________________________________________
-##Technologies Used
+## Technologies Used
 •	Python 3.8+
 •	Pandas
 •	NumPy
@@ -14,7 +14,7 @@ ________________________________________
 •	Label Encoding
 •	Regular Expressions (re)
 ________________________________________
-##Datasets Processed
+## Datasets Processed
 Employee & Customer Datasets
 <a href="https://github.com/hitesh9595/DataCleaning/blob/main/dataCleaning.csv">dataCleaning.csv</a>
 <a href ="https://github.com/hitesh9595/DataCleaning/blob/main/SmallDataSet.csv">SmallDataSet.csv</a>
@@ -24,11 +24,11 @@ Cafe Sales Dataset
 Movies Dataset
 <a href ="https://github.com/hitesh9595/DataCleaning/blob/main/movies%20(Autosaved).csv"> movies (Autosaved).csv</a>
 ________________________________________
-Project 1 — Employee & Customer Data Cleaning Pipeline
+# Project 1 — Employee & Customer Data Cleaning Pipeline
 Overview
 A robust preprocessing system designed to clean employee and customer datasets containing missing values, malformed text, duplicate IDs, inconsistent formats, and invalid entries.
 ________________________________________
-##Features
+## Features
 Automated ID Management
 •	Removes duplicate IDs
 •	Handles invalid ID ranges
@@ -60,7 +60,7 @@ Salary & Financial Data Cleaning
 •	Converts strings to numeric
 •	Handles missing salary entries
 ________________________________________
-##Columns Processed
+## Columns Processed
 Employee Dataset
 •	id
 •	age
@@ -85,7 +85,7 @@ Customer Dataset
 •	Salary
 •	Last_Login
 ________________________________________
-##Results
+## Results
 •	100% unique IDs
 •	Standardized age formats
 •	Clean phone numbers
@@ -93,12 +93,12 @@ ________________________________________
 •	Consistent gender categories
 •	Analysis-ready structured data
 ________________________________________
-#Project 2 — Cafe Sales Data Cleaning & ML-Based Missing Value Prediction
+# Project 2 — Cafe Sales Data Cleaning & ML-Based Missing Value Prediction
 ##Overview
 A real-world transactional data cleaning project designed to process noisy cafe sales records with missing categorical values, malformed entries, and inconsistent numerical data.
 This project also demonstrates Machine Learning-based missing value prediction using Random Forest Classification.
 ________________________________________
-##Features
+## Features
 Item Cleaning
 •	Removes UNKNOWN and ERROR entries
 •	Encodes categorical items
@@ -119,14 +119,14 @@ Uses:
 •	Feature Engineering
 to predict missing Location values.
 ________________________________________
-##ML Workflow
+## ML Workflow
 1. Encode categorical features
 2. Split known & unknown locations
 3. Train Random Forest model
 4. Predict missing locations
 5. Decode predicted labels
 ________________________________________
-##Columns Processed
+## Columns Processed
 •	Item
 •	Quantity
 •	Price Per Unit
@@ -135,17 +135,17 @@ ________________________________________
 •	Location
 •	Transaction Date
 ________________________________________
-##Results
+## Results
 •	Recovered missing locations using ML
 •	Cleaned corrupted entries
 •	Standardized numerical columns
 •	Created structured sales dataset
 ________________________________________
-#Project 3 — Movies Dataset Cleaning & Feature Engineering
-##Overview
+# Project 3 — Movies Dataset Cleaning & Feature Engineering
+## Overview
 A preprocessing and feature engineering project focused on cleaning messy movie industry datasets containing malformed years, noisy genres, missing ratings, and inconsistent vote formats.
 ________________________________________
-##Features
+## Features
 Year Extraction & Cleaning
 •	Removes Roman numerals
 •	Extracts valid years
@@ -170,7 +170,7 @@ Runtime Processing
 •	Handles missing runtime values
 •	Uses mean imputation
 ________________________________________
-##Columns Processed
+## Columns Processed
 •	YEAR
 •	GENRE
 •	RATING
@@ -178,13 +178,13 @@ ________________________________________
 •	RunTime
 •	Gross
 ________________________________________
-##Results
+## Results
 •	Standardized movie metadata
 •	Improved dataset consistency
 •	Cleaned vote counts
 •	Created structured content categories
 ________________________________________
-##Skills Demonstrated
+## Skills Demonstrated
 •	Data Cleaning
 •	Data Wrangling
 •	Feature Engineering
@@ -197,7 +197,7 @@ ________________________________________
 •	Data Transformation
 •	Exploratory Data Preparation
 ________________________________________
-##Future Improvements
+## Future Improvements
 •	Add unit testing
 •	Create configurable cleaning rules
 •	Generate automated data quality reports
@@ -205,5 +205,5 @@ ________________________________________
 •	Support SQL & JSON datasets
 •	Build interactive dashboards
 ________________________________________
-##License
+## License
 This project is open source and available under the MIT License.
